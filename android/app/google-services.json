@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "696086497678",
+    "project_id": "ux-design-e1cd1",
+    "storage_bucket": "ux-design-e1cd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696086497678:android:82482f64cc9e456816fcdf",
+        "android_client_info": {
+          "package_name": "com.foxapps.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD30XMe8GurtrR6V5Av2MSx87ON4NMzLS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
