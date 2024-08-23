@@ -1,16 +1,14 @@
-# ux_design_novo
+# Aplicativo mobile para gestão de tarefas
 
-A new Flutter project.
+Este é um aplicativo de gestão de horários ou tarefas diárias. O aplicativo apresenta as seguintes características:
+- possui tela de registro e de login;
+- o usuário pode inserir título, descrição, data, data de início, data de término e nível de prioridade da tarefa;
+- o usuário pode ver as tarefas concluídas no dia.
+No âmbito técnico, o aplicativo possui as seguintes características:
+- o aplicativo foi criado com o framework Flutter;
+- o sistema de registro e de login utiliza os serviços do Google Firebase; e
+- as tarefas são armazenadas no banco de dados Firestore do Google Firebase.
 
-## Getting Started
+A seguir constam as telas do aplicativo:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Tela de registro
