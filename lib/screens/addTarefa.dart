@@ -42,12 +42,6 @@ class _AddTarefaLoginState extends State<AddTarefaForm> {
   DateTime selectedData = DateTime.now();
   TimeOfDay selectedHoraIni = TimeOfDay.now();
   TimeOfDay selectedHoraFim = TimeOfDay.now();
-  var horaFinal = DateTime(2000,1,1, TimeOfDay.now().hour, TimeOfDay.now().minute).add(Duration(hours: 1));
-
-  TimeOfDay atualizarHoraFinal (){
-    return selectedHoraFim = TimeOfDay(hour: horaFinal.hour, minute: horaFinal.minute);
-  }
-
 
   _selectData(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
@@ -65,7 +59,7 @@ class _AddTarefaLoginState extends State<AddTarefaForm> {
   _selectHoraIni(BuildContext context) async {
     final TimeOfDay? picked = await showTimePicker(
       context: context,
-      initialTime: TimeOfDay.now(),
+      initialTime: selectedHoraIni,
         builder: (context, child) {
           return MediaQuery(
             data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
@@ -84,7 +78,7 @@ class _AddTarefaLoginState extends State<AddTarefaForm> {
     //TimeOfDay horaFinalAlt = TimeOfDay(hour: horaFinal.hour, minute: horaFinal.minute);
     final TimeOfDay? picked = await showTimePicker(
         context: context,
-        initialTime: atualizarHoraFinal(),
+        initialTime: selectedHoraFim,
         builder: (context, child) {
           return MediaQuery(
             data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
